@@ -22,6 +22,7 @@ function palindrome(str) {
 function error(str) {
   if (str === "") {
     alert("Please input a value")
+    result.innerText = "";
   }
 }
 
@@ -30,6 +31,12 @@ checkBotton.addEventListener("click", (e) => {
   palindrome(textInput.value) || error(textInput.value);
 }
 )
+
+textInput.addEventListener('keydown', (e) => {
+  if(e.key === "Enter"){
+  palindrome(textInput.value) || error(textInput.value);
+  }
+})
 
 // change theme dark/light
 const colorSwitch = document.querySelector('.switch-label input[type="checkbox"]');

@@ -23,7 +23,7 @@
 html {
   background-image: var(--background-color);
   color: var(--font-color);
-  height: auto;
+  height: fit-content;
   text-align: center;
 }
 
