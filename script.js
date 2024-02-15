@@ -1,5 +1,4 @@
 const textInput = document.getElementById("text-input");
-const userInput = document.getElementById("text-input").value;
 const checkBotton = document.getElementById("check-btn");
 const result = document.getElementById("result");
 
@@ -28,7 +27,7 @@ function error(str) {
 
 checkBotton.addEventListener("click", (e) => {
   e.preventDefault();
-  palindrome(userInput) || error(userInput);
+  palindrome(textInput.value) || error(textInput.value);
 }
 )
 
